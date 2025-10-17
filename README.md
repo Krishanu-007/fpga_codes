@@ -245,8 +245,17 @@ This project is a simple toggle switch. When the switch is pressed once, the LED
 ### switch_toggle:
 This project is an advanced version of the toggle switch. Here, the LED toggles its state from one pattern to another fixed pattern(basically jumps between two patterns) each time the switch is pressed.
 
+### debouncer:
+This project implements a debouncer circuit for the switch. It ensures that only a single press is registered even if the switch bounces. The switch bounce is filtered out using a simple counter-based approach. The actual registered switch signal is a 10ms delayed version of the raw switch input.
 
+### switch_toggle_debounced:
+This project combines the toggle switch functionality with debouncing. The LED toggles its state between two patterns each time the debounced switch is pressed.
 
+### toggle_debounced:
+This project combines the basic toggle switch functionality with debouncing. The LED turns ON when the debounced switch is pressed once and turns OFF when pressed again.
+
+### counter:
+This project implements a 8-bit binary counter that increments its value per second with a reset functionality. The counter value is displayed on the 8 LEDs of the Alchitry Cu board.
 
 
 
